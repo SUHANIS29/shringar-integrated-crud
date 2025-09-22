@@ -84,6 +84,18 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fadeIn 0.6s ease-out",
+        "bounce-in": "bounceIn 0.5s ease-out",
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["Playfair Display", "serif"],
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-rose": "var(--gradient-rose)",
+        "gradient-gold": "var(--gradient-gold)",
+        "gradient-subtle": "var(--gradient-subtle)",
       },
     },
   },
