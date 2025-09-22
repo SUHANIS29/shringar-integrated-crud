@@ -2,46 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Shringar Beauty Salon Design System */
+/* Shringar Jewelry Store Design System */
 
 @layer base {
   :root {
-    --background: 355 25% 98%;
-    --foreground: 340 15% 15%;
+    --background: 45 25% 98%;
+    --foreground: 25 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 340 15% 15%;
+    --card-foreground: 25 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 340 15% 15%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 340 80% 50%;
+    --primary: 45 85% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 340 70% 60%;
+    --primary-glow: 45 75% 55%;
 
-    --secondary: 20 60% 95%;
-    --secondary-foreground: 340 15% 15%;
+    --secondary: 45 20% 95%;
+    --secondary-foreground: 25 15% 15%;
 
-    --muted: 20 30% 96%;
-    --muted-foreground: 340 10% 45%;
+    --muted: 45 15% 96%;
+    --muted-foreground: 25 10% 45%;
 
     --accent: 45 95% 85%;
-    --accent-foreground: 340 15% 15%;
+    --accent-foreground: 25 15% 15%;
 
     --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 20 15% 90%;
-    --input: 20 15% 90%;
-    --ring: 340 80% 50%;
+    --border: 45 15% 90%;
+    --input: 45 15% 90%;
+    --ring: 45 85% 45%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Beauty-themed gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-rose: linear-gradient(135deg, hsl(340 70% 60%), hsl(20 70% 70%));
-    --gradient-gold: linear-gradient(135deg, hsl(45 90% 75%), hsl(35 95% 85%));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(20 30% 96%));
+    /* Jewelry-themed gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 45%), hsl(45 95% 65%));
+    --gradient-silver: linear-gradient(135deg, hsl(220 10% 75%), hsl(220 15% 90%));
+    --gradient-hero: linear-gradient(135deg, hsl(45 85% 45%), hsl(25 85% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(45 20% 96%));
     
     /* Elegant shadows */
     --shadow-elegant: 0 10px 40px -10px hsl(var(--primary) / 0.2);
@@ -174,8 +174,23 @@
     }
   }
   
-  .service-card {
+  .jewelry-hero {
+    background: var(--gradient-hero);
+    min-height: 60vh;
+  }
+  
+  .product-card {
     @apply transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
     background: var(--gradient-gold);
+  }
+  
+  .jewelry-button {
+    @apply transition-all duration-300 transform hover:scale-105;
+    background: var(--gradient-gold);
+    color: hsl(var(--foreground));
+  }
+  
+  .jewelry-button:hover {
+    box-shadow: 0 10px 25px -5px hsl(45 85% 45% / 0.3);
   }
 }
